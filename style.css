@@ -111,6 +111,7 @@ Line-height: 26px;
 text-align: center; Letter-spacing: 0.03em;
 
 background-color: #f5f4fa;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pb:hover,
 .pb:focus{
@@ -162,24 +163,43 @@ justify-content: center;
     height: 50px;
 width: 200px;
 background: #2196F3;
-margin-right: calc((100%-200)/2);
-margin-left: calc((100%-200)/2);
+margin-right: calc((100%-172)/2);
+margin-left: calc((100%-172)/2);
 border-radius: 4px;
 text-align: center;
+display: inline-flex;
 
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+padding: 10px 24px;
+cursor: pointer;
+transition-property: background-color;
+    transition-duration: 200ms;
+    
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.mtb:hover , .mtb:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: rgb(145, 167, 255);
+    
+}
+
 .section.hero{
   
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Imgmt.jpg);
     padding-top:200px; 
     padding-bottom:200px; 
     text-align: center;
+    
 }
 .post::before{
     background-image:url(../images/post.svg);
     margin-right: 16px;
     background-repeat: no-repeat;
+    
 
 }
 .number::before{
@@ -221,6 +241,8 @@ align-items: center;
 border-radius: 50%;
 background-color: #fff;
 color: #AFB1B8;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 .linkic:hover ,.link:focus{
@@ -233,6 +255,45 @@ color: #AFB1B8;
 }
 .iconlitem{
     padding-right: 10px;
+    
+}
+.navlink:hover , .navlink:focus{
+    color: #2196F3;
+    
+}
+.navlink{
+    color: #fff;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customerlist{
+    display: flex;
+    list-style-type: none;
+}
+.customerlink{
+    width: 170px;
+    height: 90px;
+    border: 1px solid gainsboro;
+    color: #AFB1B8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+    margin-right: 30px;
+    border-radius: 4px;
+    
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.customerlink:hover , .customerlink:focus{
+   border-color: #2196F3;
+   
+   fill: #2196F3;
 }
 
 
